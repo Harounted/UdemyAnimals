@@ -19,7 +19,7 @@ function App() {
         handleClick();
       }
     } else {
-      console.log("no more animals for you bitch !!");
+      console.log("no more animals for you !!");
     }
   };
 
@@ -28,9 +28,9 @@ function App() {
   });
 
   return (
-    <div>
+    <div className="app">
       <button onClick={handleClick}>Add Animal</button>
-      <div>{renderedAnimals}</div>
+      <div className="animal-list">{renderedAnimals}</div>
     </div>
   );
 }
